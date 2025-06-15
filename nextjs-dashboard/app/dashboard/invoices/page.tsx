@@ -7,7 +7,7 @@ import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 import { fetchInvoicesPages } from '@/app/lib/data';
 
-export const revalidate = 0;
+export const dynamic = 'force-dynamic'; // ✅ Allow updates
  
 export default async function Page(props: {
   searchParams?: Promise<{
